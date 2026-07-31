@@ -33,3 +33,35 @@ function greet(fname,lname){
 
 greet("Utkarsh","Dixit")
 greet("Waseem","Sir")
+
+
+
+console.log("\n\n\n\n Function Return ====\n\n\n\n")
+
+function add(x,y){
+    return x+y
+}
+
+var result = add(20,30)
+
+console.log("Sum =",result)
+
+console.log("\n ===== Default Arguments =====\n\n\n\n")
+function fullName(fname = "ABES",lname = "Engineering College"){
+    return fname+" "+lname
+}
+
+console.log(fullName())
+console.log(fullName("Utkarsh","Dixit\n\n\n\n"))
+
+function totalMarks(math,english,science){
+    return math+english+science
+}
+
+function percentage(total){
+    return (total/300)*100
+}
+
+var total = totalMarks(99,99,93)
+console.log("Total Marks: ",total)
+console.log("Percentage",percentage(total)+"%")
